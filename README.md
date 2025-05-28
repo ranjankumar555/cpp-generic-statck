@@ -1,8 +1,76 @@
-# cpp-generic-stack [menu based interface]
-- Generic stack to support all data types
-- push(), pop(), top(), isStackEmpty() in O(1) time.
-- Menu and warning based application.
-- Interactive interface using color coding
+# Generic Stack Implementation in C++
+
+A template-based stack implementation in C++ with a user-friendly, menu-driven interface. This project reinforces understanding of stack data structures, type generalization using templates, and basic input validation for secure operations.
+
+## 📌 Project Overview
+
+- Developed a generic `Stack<T>` class using C++ templates  
+- Interactive CLI to perform stack operations such as:
+   ```cpp
+       push()
+       pop()
+       top()
+       isEmpty()
+       size()
+    ```
+- Fully type-generic: works with user-defined types (int, float, string, etc.)
+- Basic input validation to avoid runtime misuse and simulate boundary cases
+- Clear structure and modular code for ease of maintenance
+- Defensive programming practices: checks for overflow/underflow
+
+## 🧠 Concepts Applied
+
+- Data Structures: Stack (LIFO)
+- C++ Templates for generic programming
+- Menu-based console UI using standard I/O
+- Safety checks to prevent invalid operations (e.g., popping from an empty stack)
+
+## 🛠️ Technologies Used
+
+- C++ (Templates, OOP)
+- Vi Editor
+- CLI tools and standard library I/O
+
+## 🧪 Sample Usage
+
+```bash
+********** Main Menu ***********
+-----------------------------------
+1. Push Element
+2. Pop Element
+3. View Top
+4. Display Stack
+5. Check Empty
+6. Stack Size
+7. Exit
+Select option:
+-----------------------------------
+````
+
+```cpp
+Stack<int> intStack;
+intStack.push(10);
+intStack.push(20);
+std::cout << intStack.top();  // Output: 20
+intStack.pop();
+std::cout << intStack.size(); // Output: 1
+```
+
+## 📁 Project Structure
+
+```
+.
+├── Stack.hpp         # Template class declaration
+├── main.cpp          # Menu-driven interface and test driver
+└── Makefile          # Build system
+```
+
+---
+
+This project demonstrates proficiency in C++ templates, OOP, and command-line application development—critical skills for system-level and backend development roles.
+
+---
+
 
 ## Demonstration
 ![Screenshot 2025-05-16 035023](https://github.com/user-attachments/assets/ccb4fd30-8e10-46fc-b315-b37084ba3b47)
