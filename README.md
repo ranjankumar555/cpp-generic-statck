@@ -2,6 +2,9 @@
 
 A template-based stack implementation in C++ with a user-friendly, menu-driven interface. This project reinforces understanding of stack data structures, type generalization using templates, and basic input validation for secure operations.
 
+## ✏️ Design
+![project-2](https://github.com/user-attachments/assets/a7f58346-c438-478c-a99c-3ae0537c2d95)
+
 ## 📌 Project Overview
 
 - Developed a generic `Stack<T>` class using C++ templates  
